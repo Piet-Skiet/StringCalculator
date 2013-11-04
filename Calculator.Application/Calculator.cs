@@ -30,7 +30,7 @@ namespace Calculator.Application
             {
                 if (input.Contains("]["))
                 {
-                    var dells = input.Substring(2, input.IndexOf("]\n", StringComparison.Ordinal) - 1);//                    
+                    var dells = input.Substring(2, input.IndexOf("]\n", StringComparison.Ordinal) - 1);                    
                     string[] multiDels = dells.Split(splitStringdels.ToArray(), StringSplitOptions.None);
                     foreach (var handleDels in multiDels)
                     {
